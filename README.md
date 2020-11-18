@@ -1,6 +1,9 @@
 # LxStart_time
 这个框架主要是用来管理第三方，和其他的数据初始化进行管理，从而对启动进行一定的优化
-使用方法 ：在Application中添加 一个接口约束 和一个实现类
+使用方法 ：
+ 	        implementation 'com.github.DogMis:LxStart_time:1.0'
+
+在Application中添加 一个接口约束 和一个实现类
         AppInitTask.init(this,Sdk.class,InitAPPManger.class);
         在接口约束类中进行初始化的方法添加     @ModelLoadin(grade = 99, thredid = ThreadId.MAIN_THREAD_ID,Jumpout=false)
         
